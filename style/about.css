@@ -1,0 +1,140 @@
+body {
+    background-color: powderblue;
+    text-align: center;}
+    @keyframes example {
+      0%   {color:purple; left:0px; top:0px;}
+      25%  {color:aquamarine; left:200px; top:0px;}
+      50%  {color:rgb(235, 133, 218); left:200px; top:200px;}
+      75%  {color:rgb(139, 218, 255); left:0px; top:200px;}
+      100% {color:rgb(175, 247, 175); left:0px; top:0px;}
+    }
+    h1 {
+      color:plum;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation-name: example;
+    animation-duration: 30s
+    }
+  h3 {
+    border: 3px dashed black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 80px;
+    background-color:plum;
+   font-size: 20px;
+  }
+
+    #nav_menu ul {
+      grid-template: auto / repeat(5, 1fr);
+      align-content: center;
+      }
+      #nav_menu ul li a {
+       border-style:groove;
+       text-align: center;
+       text-emphasis-color: black;
+       border-color: black;
+       padding: 1em 0;
+       background-color: plum;
+       color: black;
+       font-weight: bold;
+      }
+     
+     
+      nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+        background-color:palevioletred;
+      }
+      nav ul li {
+        margin: 10px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+      }
+      nav ul li a:hover, .active {
+        background-color: rgb(221, 64, 116);
+        border-radius: 5px;
+      }
+    h4 {
+      font-size: 15px;
+      text-align: left;
+    }
+    .header {
+      background-color:plum;
+      padding: 5px;
+       text-align: center;
+      }
+
+      .scroll-container 
+      {
+        width: 400px;
+        height: 300px;
+        overflow: auto;
+        border: 3px dashed  #060000;
+      }
+      .scroll-content {
+        align-content: center;
+        width: 100%;
+        height:100%;
+       
+       
+      }
+      .parent-container {
+        text-align: center;
+      }
+      .scroll-container {
+        display: inline-block;
+      }
+      .dropbtn {
+        background-color: plum;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: dotted;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        
+        position:center;
+        display: block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position:sticky;
+        background-color: plum;
+        border: solid;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(222, 159, 208, 0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color:black;
+        font-family:cursive;
+        padding: 12px 16px;
+        text-decoration:black;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: powderblue}
+      
+      .dropdown:hover .dropdown-content {
+        display:block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: palevioletred;
+      }
+
+      
+      
+      .gallery img:hover {
+        transform: scale(1.1); /* Zoom effect on hover */
+      }
+      

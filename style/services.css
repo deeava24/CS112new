@@ -1,0 +1,96 @@
+body {
+    background-color: powderblue;
+    text-align: center;
+   ;
+}
+
+aside {
+    text-align: right;
+    padding: auto;
+}
+
+@keyframes example {
+  0%   {color:purple; left:0px; top:0px;}
+  25%  {color:aquamarine; left:200px; top:0px;}
+  50%  {color:rgb(235, 133, 218); left:200px; top:200px;}
+  75%  {color:rgb(139, 218, 255); left:0px; top:200px;}
+  100% {color:rgb(175, 247, 175); left:0px; top:0px;}
+}
+.header {
+  background-color:plum;
+  padding: 5px;
+   text-align: center;
+  }
+h1 {
+  color:plum;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+animation-name: example;
+animation-duration: 30s
+}
+h3{
+  text-align:center;
+  padding-top: 3%;
+}
+
+#nav_menu ul {
+  grid-template: auto / repeat(5, 1fr);
+  align-content: center;
+  }
+  #nav_menu ul li a {
+   border-style:groove;
+   text-align: center;
+   text-emphasis-color: black;
+   border-color: black;
+   padding: 1em 0;
+   background-color: plum;
+   color: black;
+   font-weight: bold;
+  }
+ 
+    
+  
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      background-color:palevioletred;
+    }
+    nav ul li {
+      margin: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+    nav ul li a:hover, .active {
+      background-color: rgb(221, 64, 116);
+      border-radius: 5px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+    }
+    
+ 

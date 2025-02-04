@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="icon" type="image/x-icon" href="images/jennaheader.JPG">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <script>
+    (function () { emailjs.init("cqvAHB6eqWR0HGIi9"); })(); 
+    function openWin() {
+      window.open("http://127.0.0.1:5500/index/loginpasswordpop.html",);}
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>Contact Us!</h1>
+    </div>
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html"class="active">Contact</a></li>
+        <li><a href="loginpasswordpop.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Registration Form</h2>
+  <form id="myform" onsubmit="sendMail(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="cellphone">Cellphone:</label><br>
+    <input type="text" id="cellphone" name="cellphone" required><br><br>
+    <label for="userid">User ID:</label><br>
+    <input type="text" id="userid" name="userid" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+    
+    <input type="button" value="Open Window" onclick="openWin()">
+  </form>
+  <div id="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49453.67064491336!2d-118.2264158513672!3d34.0414348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf85228f0bdb%3A0xddbc1949f1ef7eec!2sEast%20Los%20Angeles%20College!5e1!3m2!1sen!2sus!4v1737855972050!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      alt="map">
+    </iframe>
+  </div>
+  <footer>
+    <h5>
+      <a href="https://www.instagram.com/deeavalos2/">Link to Instagram Page</a>
+    </h5>
+    &copy; 2025 Jenna Avalos Zelaya
+  </footer>
+</body>
+</html>
